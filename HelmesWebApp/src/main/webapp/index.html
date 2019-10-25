@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Helmes - test</title>
+	<!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--My scripts-->
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+
+<body>
+	<div id="userDataForm">
+		<h2>Overview</h2>
+		<div class="name-form">
+			<label for="nameField">Name:</label>
+			<div id="nameField">-</div>
+		</div>
+		<div class="sector-form">
+			<label for="sectorField">Sectors:</label>
+			<div id="sectorField"></div>
+		</div>
+		<div class="terms-form">
+			<label for="termsField">Agreed to terms:</label>
+			<div id="termsField">-</div>
+		</div>
+		<input type="button" id="editBtn" value="Edit" onclick="openModal()">
+	</div>
+	<div class="modal-window">
+		<div class="modal-content">
+			<span class="close" onclick="closrModalAndResetValues()">&times;</span>
+			<br>
+			<br>
+			<div>Please enter your name and pick the Sectors you are currently involved in.</div>
+			<br>
+			<br>
+			<div class="name-form">
+				<label for="fullNameInput">Name:</label>
+				<input type="text" id="fullNameInput">
+				<p id="nameErrorMsg" class="error-message">Please enter your name</p>
+			</div>
+			<div class="sector-form">
+				<label for="sectors">Sectors:</label>
+				<select id="sectors" multiple size="5">
+				</select>
+			</div>
+			<p id="sectorErrorMsg" class="error-message">Please choose at least one sector</p>
+
+			<br>
+			<input type="checkbox" id="termsInput"> Agree to terms
+			<p id="termsErrorMsg" class="error-message">You have to agree to terms</p>
+
+			<br>
+			<br>
+			<div class="modal_buttons_form">
+				<input type="submit" value="Save" onclick="saveData()">
+				<input type="button" value="Cancel" onclick="closrModalAndResetValues()">
+			</div>
+			<br>
+		</div>
+	</div>
+	
+</body>
+</html>

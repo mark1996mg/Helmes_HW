@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#userDataForm {
+    margin: auto;
+    margin-top: 200px;
+    padding: 0px 25px;
+    width: 370px;
+    height: 320px;
+    border: 1px solid grey;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+#userDataForm h2 {
+    text-align: center;
+}
+
+.name-form, .sector-form {
+    height: auto;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#nameField, #sectorField, #termsField, #fullNameInput, #sectors {
+    float: right;
+}
+
+#nameField {
+    max-width: 222px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#sectorField {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    overflow-y: scroll;
+    font-size: 12px;
+    line-height: 1.4;
+    border: 1px solid grey;
+}
+
+#editBtn {
+    margin-top: 20px;
+    float: right;
+}
+
+#fullNameInput {
+    width: 322px;
+}
+
+.modal-window {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: 10;
+    padding-top: 200px;
+    background: rgba(128, 128, 128, 0.349);
+}
+
+.modal-content {
+    margin: auto;
+    width: 440px;
+    padding: 10px 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 4px rgb(138, 138, 138);
+}
+
+.close {
+    font-size: 24px;
+    font-weight: 600;
+    float: right;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+}
+
+.close:hover {
+    color: rgb(87, 87, 87);
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.modal_buttons_form {
+    float: right;
+}
+

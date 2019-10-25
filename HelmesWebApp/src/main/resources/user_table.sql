@@ -1,0 +1,6 @@
+CREATE TABLE users(
+	userId VARCHAR(64) NOT NULL,
+	fullName VARCHAR(255) NOT NULL,
+	hasAgreedToTerms BOOLEAN NOT NULL,
+	CONSTRAINT pk_user PRIMARY KEY (userId)
+);
