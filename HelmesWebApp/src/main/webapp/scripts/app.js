@@ -186,7 +186,7 @@ function closeModal() {
     $('.modal-window').css('display', 'none');
 }
 
-function closrModalAndResetValues() {
+function closeModalAndResetValues() {
     closeModal();
     resetChangedValues();
 }
