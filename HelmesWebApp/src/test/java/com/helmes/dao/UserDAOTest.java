@@ -1,6 +1,7 @@
 package com.helmes.dao;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Assert;
@@ -51,9 +52,11 @@ public class UserDAOTest {
 		
 		sector1.setSectorId(1);
 		sector1.setSectorName("Manufacturing");
+		sector1.setChildSectors(Arrays.asList(new Integer[] {44, 14, 3}));
 		
 		sector2.setSectorId(2);
 		sector2.setSectorName("Construction");
+		sector2.setChildSectors(Arrays.asList(new Integer[] {6, 7, 9}));
 		
 		selectedSectors.add(sector1);
 		selectedSectors.add(sector2);
@@ -65,9 +68,11 @@ public class UserDAOTest {
 		
 		sector3.setSectorId(3);
 		sector3.setSectorName("Services");
+		sector3.setChildSectors(Arrays.asList(new Integer[] {54, 55, 52}));
 		
 		sector4.setSectorId(4);
 		sector4.setSectorName("Food & Beverage");
+		sector4.setChildSectors(Arrays.asList(new Integer[] {72, 70, 68}));
 		
 		sectors.addAll(selectedSectors);
 		sectors.add(sector3);

@@ -2,6 +2,7 @@ package com.helmes.dao;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Assert;
@@ -40,9 +41,11 @@ public class SectorDAOTest {
 		
 		sector.setSectorId(1);
 		sector.setSectorName("Metal works");
+		sector.setChildSectors(Arrays.asList(new Integer[] {5, 7, 1}));
 		
 		sector2.setSectorId(2);
 		sector2.setSectorName("Printing");
+		sector2.setChildSectors(Arrays.asList(new Integer[] {3, 8, 171}));
 		
 		sectors = new ArrayList<Sector>();
 		sectors.add(sector);
